@@ -1,0 +1,43 @@
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+
+}
+
+.nav__title {
+    font-family: "BJCree";
+    font-weight: 200;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.header__hero header .container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-weight: 700;
+    padding-top: 64px;
+    justify-content: space-between;
+}
+
+.header__icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+.header__account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
