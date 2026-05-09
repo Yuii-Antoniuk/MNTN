@@ -1,7 +1,7 @@
 .hero__icon {
     width: 20px;
     height: 20px;
-    fill: #FFFFFF;
+    fill: $main-color;
 }
 
 .hero__subtitle {
@@ -10,20 +10,26 @@
     gap: 15px;
     font-family: "Roboto";
     font-weight: 700;
+    font-size: 20px;
+}
+
+.hero__subtitle:hover {
+    text-decoration: underline;
 }
 
 .hero__suptitle {
     font-family: "Roboto";
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 100%;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: #FBD784;
+    color: $accent-color;
 }
 
 .hero__suptitle--adds {
     letter-spacing: 0px;
+    color: $accent-color;
 }
 
 .hero__title {
@@ -33,15 +39,20 @@
     line-height: 100px;
     text-transform: capitalize;
     max-width: 950px;
-    color: #FFFFFF;
+    color: $main-color;
 }
 
 .hero {
     padding-top: 198px;
+    position: relative;
 }
 
 .hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hero__content {
+    padding: 40px 40px;
 }

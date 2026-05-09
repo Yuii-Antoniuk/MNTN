@@ -2,7 +2,7 @@
     display: flex;
     list-style: none;
     gap: 40px;
-
+    margin: 0 auto;
 }
 
 .nav__title {
@@ -15,29 +15,58 @@
 
 .header__hero header .container {
     display: flex;
-    justify-content: center;
-    padding: 0px 80px;
 }
 
 .header__nav {
     display: flex;
     align-items: center;
-    gap: 30px;
-    color: #FFFFFF;
+    color: $main-color;
     font-family: "Roboto";
     font-weight: 700;
-    padding-top: 64px;
     justify-content: space-between;
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    z-index: 1000;
+    // background-color: #fbd78433;
+    background-color: $header-background-special;
+    backdrop-filter: blur(8px);
+    height: 89px;
 }
 
 .header__icon {
     width: 20px;
     height: 20px;
-    fill: #FFFFFF;
+    fill: $main-color;
 }
 
 .header__account {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu-icon {
+    width: 20px;
+    height: 20px;
+    fill: $main-color;
+}
+
+.nav__item {
+    transition: all 300ms;
+}
+
+.nav__item:hover {
+    transform: scale(1.15);
+    text-decoration: underline;
 }

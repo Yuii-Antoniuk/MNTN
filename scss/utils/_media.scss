@@ -1,0 +1,45 @@
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 768px) {
+    // header
+    .nav__list, .header__account {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    // hero
+    .hero__title {
+        font-size: 48px;
+    }
+
+    .hero__suptitle, .hero__subtitle {
+        font-size: 18px;
+        line-height: 80px;
+    }
+}
+@media screen and (max-width: 480px) {
+    // header
+    .hero__content {
+        padding: 20px 20px 0px 20px;
+    }
+    .header__nav {
+        padding: 0px 20px 0px 20px;
+    }
+
+    // hero
+    .hero__title {
+        font-size: 40px;
+        line-height: 75px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__hero {
+        background-image: url("../imgs/BG-hero-x2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }   
+}

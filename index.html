@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MNTN</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,9 +15,9 @@
         <header>
             <div class="container">
                 <nav class="header__nav">
-                    <p class="nav__title">MNTN<p>
+                    <a href="./index.html" data-aos="zoom-out-right"><p class="nav__title">MNTN<p></a>
 
-                    <ul class="nav__list">
+                    <ul class="nav__list" data-aos="zoom-in-down">
                         <li class="nav__item"><a href="#">Equipment</a></li>
                         <li class="nav__item"><a href="#">About us</a></li>
                         <li class="nav__item"><a href="#">Blog</a></li>
@@ -25,6 +26,7 @@
                     <p class="header__account"><svg class="header__icon">
                             <use href="./imgs/symbol-defs.svg#icon-account">
                         </svg>Account</p>
+                    <svg class="mobile-menu-icon"><use href="./imgs/symbol-defs.svg#icon-menu"></svg>
                 </nav>
             </div>
         </header>
@@ -32,48 +34,54 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__content">
-                    <h3 class="hero__suptitle"><span class="hero__suptitle--adds">───</span>  A hiking guide</h3>
+                    <h3 class="hero__suptitle" data-aos="zoom-out-right"><span class="hero__suptitle--adds">───</span>  A hiking guide</h3>
                     <h2 class="hero__title">Be prepared for the Mountains and beyond!</h2>
-                    <a href="#" class="hero__subtitle">scroll down <svg class="hero__icon">
+                    <a href="#" class="hero__subtitle" data-aos="zoom-in-left">scroll down <svg class="hero__icon">
                             <use href="./imgs/symbol-defs.svg#icon-arrow">
                         </svg></a>
                 </div>
             </div>
         </section>
     </div>
-<main></main>
-<footer class="footer">
+
+
+    <footer class="footer">
         <div class="container">
             <div class="display__footer">
-            <div class="footer__column-logo">
-             <h3 class="footer__logo">MNTN</h3>
-             <p class="footer__text">Get out there & discover your next slope, mountain & destination!</p>
-             <p class="footer__copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+                <div class="footer__column-logo">
+                    <h3 class="footer__logo">MNTN</h3>
+                    <p class="footer__text">Get out there & discover your next slope, mountain & destination!</p>
+                    <p class="footer__copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+                </div>
+
+
+                <div class="footer__column-blog">
+                    <ul class="footer__ul-blog">
+                        <li class="footer__li-blog-title">More on The Blog</li>
+                        <li class="footer__li-blog">About MNTN</li>
+                        <li class="footer__li-blog">Contributors & Writers</li>
+                        <li class="footer__li-blog">Write For Us</li>
+                        <li class="footer__li-blog">Contact Us</li>
+                        <li class="footer__li-blog">Privacy Policy</li>
+                    </ul>
+                </div>
+
+                <div class="footer__column-mntn">
+                    <ul class="footer__ul-mntn">
+                        <li class="footer__li-mntn-title">More on MNTN</li>
+                        <li class="footer__li-mntn">The Team</li>
+                        <li class="footer__li-mntn">Jobs</li>
+                        <li class="footer__li-mntn">Press</li>
+                    </ul>
+                </div>
             </div>
-   
-
-    <div class="footer__column-blog">
-     <ul class="footer__ul-blog">
-        <li class="footer__li-blog-title">More on The Blog</li>
-        <li class="footer__li-blog">About MNTN</li>
-        <li class="footer__li-blog">Contributors & Writers</li>
-        <li class="footer__li-blog">Write For Us</li>
-        <li class="footer__li-blog">Contact Us</li>
-        <li class="footer__li-blog">Privacy Policy</li>
-     </ul>
-     </div>
-
-<div class="footer__column-mntn">
-<ul class="footer__ul-mntn">
-    <li class="footer__li-mntn-title">More on MNTN</li>
-    <li class="footer__li-mntn">The Team</li>
-    <li class="footer__li-mntn">Jobs</li>
-    <li class="footer__li-mntn">Press</li>
-</ul>
-</div>
-</div>
-     </div>
+        </div>
     </footer>
-</body>
 
+    <!-- aos scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- aos scripts -->
+
+</body>
 </html>
