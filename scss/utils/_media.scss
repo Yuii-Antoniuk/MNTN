@@ -7,9 +7,14 @@
         display: none;
     }
 
+    .mobile-menu {
+        display: flex;
+    }
+
     .mobile-menu-icon {
         display: block;
     }
+
     // hero
     .hero__title {
         font-size: 48px;

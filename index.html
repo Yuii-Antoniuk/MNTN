@@ -15,7 +15,9 @@
         <header>
             <div class="container">
                 <nav class="header__nav">
-                    <a href="./index.html" data-aos="zoom-out-right"><p class="nav__title">MNTN<p></a>
+                    <a href="./index.html" data-aos="zoom-out-right">
+                        <p class="nav__title">MNTN<p>
+                    </a>
 
                     <ul class="nav__list" data-aos="zoom-in-down">
                         <li class="nav__item"><a href="#">Equipment</a></li>
@@ -26,17 +28,68 @@
                     <p class="header__account"><svg class="header__icon">
                             <use href="./imgs/symbol-defs.svg#icon-account">
                         </svg>Account</p>
-                    <svg class="mobile-menu-icon"><use href="./imgs/symbol-defs.svg#icon-menu"></svg>
+
+ <!-- MOBILE MENU -->
+                    <div class="mobile-menu">
+
+                        <!-- hidden checkbox -->
+                        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+                        <!-- button -->
+                        <label for="menu-toggle" class="mobile-menu-btn">
+                            <svg class="mobile-menu-icon">
+                                <use href="./imgs/symbol-defs.svg#icon-menu"></use>
+                            </svg>
+                        </label>
+
+                         <!-- menu -->
+                        <div class="mobile-menu-contains">
+                            <ul class="mobile-nav-list">
+
+                                <li class="mobile-nav-item">
+                                    <a href="#">Equipment</a>
+                                </li>
+
+                                <li class="mobile-nav-item">
+                                    <a href="#">About us</a>
+                                </li>
+
+                                <li class="mobile-nav-item">
+                                    <a href="#">Blog</a>
+                                </li>
+
+                                <li class="mobile-nav-item">
+                                    <a href="#">Account</a>
+                                </li>
+
+                            </ul>
+
+                            <div class="mobile-menu-footer">
+                                <p>
+                                    Explore the mountains,<br>
+                                    discover new routes<br>
+                                    and enjoy nature.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </nav>
             </div>
         </header>
 
+        <section class="mobile-menu-contains">
+        
+        </section>
+
+
         <section class="hero">
             <div class="container">
                 <div class="hero__content">
-                    <h3 class="hero__suptitle" data-aos="zoom-out-right"><span class="hero__suptitle--adds">───</span>  A hiking guide</h3>
+                    <h3 class="hero__suptitle" data-aos="zoom-out-right"><span class="hero__suptitle--adds">───</span>
+                         A hiking guide</h3>
                     <h2 class="hero__title">Be prepared for the Mountains and beyond!</h2>
-                    <a href="#" class="hero__subtitle" data-aos="zoom-in-left">scroll down <svg class="hero__icon">
+                    <a href="#cards" class="hero__subtitle" data-aos="zoom-in-left">scroll down <svg class="hero__icon">
                             <use href="./imgs/symbol-defs.svg#icon-arrow">
                         </svg></a>
                 </div>
@@ -84,4 +137,5 @@
     <!-- aos scripts -->
 
 </body>
+
 </html>
