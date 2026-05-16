@@ -1,5 +1,56 @@
 @media screen and (max-width: 1200px) {
-    
+    // cards
+
+    .cards__list {
+        gap: 80px;
+
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            min-height: 1000px;
+        }
+    }
+
+    .card {
+        &__textbox {
+            width: 100%;
+            padding: 0;
+        }
+
+        &__overlaynum {
+            font-size: 250px;
+            top: 0px;
+            left: 55%;
+        }
+
+        &__h3 {
+            font-size: 48px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        &__textwitharrow {
+            font-size: 16px;
+        }
+
+        &__arrow {
+            width: 16px;
+            height: 12px;
+            margin-left: 8px;
+        }
+
+        &__img__reverse {
+            order: 1000 !important;
+        }
+    }
+
+
+    // cards
 }
 @media screen and (max-width: 768px) {
     // header
@@ -24,6 +75,67 @@
         font-size: 18px;
         line-height: 80px;
     }
+
+    // cards
+
+    .cards__list__item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .card {
+        &__overlaynum {
+            font-size: 150px;
+            top: 20px;
+            left: 55%;
+        }
+
+        &__textbox {
+            width: 100%;
+            padding: 0px 0px;
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__linewithtext {
+            font-size: 16px;
+        }
+
+        &__line {
+            width: 48px;
+            margin-right: 16px;
+        }
+
+        &__h3 {
+            font-size: 32px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &__textwitharrow {
+            font-size: 14px;
+        }
+
+        &__arrow {
+            width: 16px;
+            height: 12px;
+            margin-left: 8px;
+        }
+
+        &__img__reverse {
+            order: 1000 !important;
+        }
+    }
+
+
+    // cards 
 }
 @media screen and (max-width: 480px) {
     // header
