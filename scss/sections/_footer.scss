@@ -5,74 +5,118 @@
     color: #ffff;
     font-family: "ABeeZee", sans-serif;
 }
+.container {
+  max-width: 1462px;
+  width: 100%;
 
-
-
+  margin: 0 auto;
+  height: auto;
+}
 .footer {
     background-color: #0B1D26;
+    padding-bottom: 40px;
+    padding-top: 100px;
 }
-
 .display__footer {
     display: flex;
     justify-content: space-between;
 }
-
 .footer__column-logo {
     display: flex;
     flex-direction: column;
-
+    max-width: 325px;
+    width: 100%;
+   
 }
-
 .footer__column-blog {
     display: flex;
     flex-direction: column;
-
+   max-width: 200px;
+    width: 100%;
     margin-left: 200px;
 }
-
 .footer__column-mntn {
     display: flex;
     flex-direction: column;
-
+    max-width: 170px;
+    width: 100%;
+   
 }
-
 .footer__text {
     font-size: 18px;
-    max-width: 303px;
-    margin-top: 24px;
-    padding-bottom: 122px;
+   max-width: 303px;
+   margin-top: 24px;
+   margin-bottom:122px;
 }
-
 .footer__li-mntn-title {
-    color: #FBD784;
-    font-size: 24px;
+color: #FBD784;
+font-size: 24px;
     line-height: 32px;
     margin-bottom: 24px;
     font-weight: bold;
 }
-
 .footer__li-mntn {
     margin-bottom: 16px;
+    
 }
-
 .footer__li-blog-title {
     color: #FBD784;
-    margin-bottom: 24px;
+     margin-bottom: 24px;
     font-size: 24px;
     line-height: 32px;
     font-weight: bold;
 }
-
 .footer__li-blog {
     margin-bottom: 16px;
 }
-
 .footer__copyright {
     color: rgba(255, 255, 255, 0.5);
-    margin-top: auto;
+     margin-top: auto;
 }
-
 .footer__logo {
     font-size: 24px;
+    
+}
 
+
+@media screen and (max-width: 1200px) {
+
+ .footer__column-blog {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer__column-blog {
+        margin-right: 20px;
+        
+    }
+    .footer__column-logo {
+       justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .display__footer {
+flex-direction: column;
+
+}
+.footer__column-blog {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer__column-mntn {
+       margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+.footer__column-logo {
+    margin: 0 auto;
+     margin-top: 20px;
+        margin-bottom: 20px;
+}
 }
