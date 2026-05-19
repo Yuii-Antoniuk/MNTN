@@ -128,19 +128,6 @@ input {
     transition: all 350ms;
 }
 
-.menu-toggle:checked + .mobile-menu-btn .burger-line:nth-child(1) {
-    transform: rotate(45deg) translateY(13px);
-}
-
-.menu-toggle:checked + .mobile-menu-btn .burger-line:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle:checked + .mobile-menu-btn .burger-line:nth-child(3) {
-    transform: rotate(-45deg) translateY(-13px);
-}
-
-
 .mobile-menu-contains {
     position: fixed;
     top: 90px;
@@ -162,7 +149,7 @@ input {
 
 
 .menu-toggle:checked ~ .mobile-menu-contains {
-    right: 0;
+    right: -1px;
 }
 
 
